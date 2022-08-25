@@ -1,0 +1,22 @@
+[debug] [2022-07-10T21:23:31.740Z] ----------------------------------------------------------------------
+[debug] [2022-07-10T21:23:31.742Z] Command:       C:\Users\matts\DOWNLO~1\firebase-tools-instant-win.exe C:\Users\matts\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase deploy
+[debug] [2022-07-10T21:23:31.742Z] CLI Version:   11.1.0
+[debug] [2022-07-10T21:23:31.742Z] Platform:      win32
+[debug] [2022-07-10T21:23:31.742Z] Node Version:  v16.15.0
+[debug] [2022-07-10T21:23:31.743Z] Time:          Sun Jul 10 2022 16:23:31 GMT-0500 (Central Daylight Time)
+[debug] [2022-07-10T21:23:31.743Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-10T21:23:31.799Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-10T21:23:31.800Z] > authorizing via signed-in user (matt.singleton2@gmail.com)
+[debug] [2022-07-10T21:23:31.800Z] [iam] checking project mattsingletondev-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-10T21:23:31.802Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mattsingletondev-portfolio:testIamPermissions [none]
+[debug] [2022-07-10T21:23:31.802Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mattsingletondev-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-10T21:23:32.395Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mattsingletondev-portfolio:testIamPermissions 200
+[debug] [2022-07-10T21:23:32.395Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mattsingletondev-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-10T21:23:32.396Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mattsingletondev-portfolio [none]
+[debug] [2022-07-10T21:23:35.451Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/mattsingletondev-portfolio
+[debug] [2022-07-10T21:23:35.646Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/mattsingletondev-portfolio
+    at RetryOperation._fn (C:\Users\matts\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\apiv2.js:241:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project mattsingletondev-portfolio. Please make sure the project exists and your account has permission to access it.
